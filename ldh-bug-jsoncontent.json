@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "x": {
+      "field": "origine",
+      "type": "nominal",
+      "scale": {
+        "type": "linear",
+        "zero": true
+      }
+    },
+    "y": {
+      "field": "trajet",
+      "type": "quantitative",
+      "scale": {
+        "type": "linear",
+        "zero": true
+      }
+    },
+    "color": {
+      "field": "destination",
+      "type": "nominal",
+      "scale": {
+        "type": "linear",
+        "zero": true
+      }
+    }
+  },
+  "data": {
+    "name": "source"
+  },
+  "config": {
+    "background": "#ffffff",
+    "padding": 20
+  }
+}
